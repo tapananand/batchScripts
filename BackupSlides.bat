@@ -18,6 +18,7 @@ set timestamp=%timestamp::=-%
 set timestamp=%timestamp:~0,-3%
 
 :: The final pathname of the log file
+:: TODO - Currently the script is dependent on the path heirarchy on target machine. Make it indpendent of it (e.g. use command line arguments)
 set logFilePath=%logFileDirectoryPath%%timestamp%.log
 
 :: Copy the files and redirect the output of the command to the log file named above (the file is created)
